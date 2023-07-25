@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBL entertainment</title>    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+<body>
+  
+  <!-- LIGHT AND DARKMODE BUTTONS -->
+  <div class="dark">  
+    <i id="darkmode" onclick="togglee()" class="bi bi-brightness-low-fill"></i>
+    <i id="lightmode" style="display: none;" onclick="detogglee()" class="bi bi-brightness-high"></i>
+  </div>
+
+  <!-- NAVIGATION ARROW TO ACCESS HEADER AND FOOTER EASILY -->
+  <div class="arrow">  
+   <a href="#contactus"> <i id="down" onclick="down()" class="bi bi-arrow-down-circle-fill"></i></a>
+   <a href="#head"> <i id="up" style="display: none;"  onclick="up()" class="bi bi-arrow-up-circle-fill"></i></a>
+  </div>
+
+
+<header id="head">
+    <div class="sticky">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="#">JBL Ent.</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span> <i class="bi bi-justify"></i></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#about-us">About Us</a>
+                  <a class="nav-link" href="#ourproducts">Store</a>
+                  <a class="nav-link" href="#ourservices">Services</a>
+                  <a class="nav-link" href="#contactus">Contact</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </div>
+    <div class="heading-div">
+        <h1 class="heading">We've got that Entertaining vibe</h1>
+        <P class="heading">Entertainment across the globe...  <span class="p2">Subscribe</span></P>
+        <marquee behavior="" direction="right">20% discount on Subscriptions before October 21st</marquee> 
+        
+    </div>
+</header>
+
+<!-- ABOUT US  -->
+<div class="container" id="about-us">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-6 col-left"></div>
+    <div class="col-sm-12 col-md-12 col-lg-6 col-right"> 
+      <h1 class="section-title">About Us</h1>
+      <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio, voluptatem dicta necessitatibus voluptatum quas ullam in eumexcepturi assumenda vel natus sunt non saepe laborum molestias voluptates, veritatis delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cum placeat voluptatibus veniam obcaecati! Aliquid ipsum ducimus molestias odio est quibusdam quo error cumque laborum laboriosam deleniti, alias ut eveniet! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, tempore blanditiis? Reprehenderit assumenda esse quas omnis cumque cupiditate! Eum incidunt provident voluptates, at nam doloremque adipisci. Nihil soluta aspernatur pariatur. 
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid text-center mb-2" id="ourservices">
+  <h1 class="service-title">services</h1>
+  <div class="row mt-5 services">
+
+    <div class="col-sm-12 col-md-4 col-lg-4 service-1 ">
+      <i class="bi bi-receipt servicesicons"></i>
+      <h1>Ticket Sale</h1>
+      <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum neque, totam vel blanditiis magni temporibus quasi reprehenderit doloremque suscipit ratione repudiandae deleniti ad optio ut beatae, voluptas minus alias at?</p>
+      <span class="p2">Learn More</span>
+    </div>
+
+    <div class="col-sm-12 col-md-4 col-lg-4 service-2 ">
+      <i class="bi bi-camera-reels servicesicons"></i>
+      <h1>Movie Production</h1>
+      <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum neque, totam vel blanditiis magni temporibus quasi reprehenderit doloremque suscipit ratione repudiandae deleniti ad optio ut beatae, voluptas minus alias at?</p>
+      <span class="p2">Learn More</span>
+    </div>
+
+    <div class="col-sm-12 col-md-4 col-lg-4 service-3 ">
+      <i class="bi bi-boombox servicesicons"></i>
+      <h1>Music Promotion</h1>
+      <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum neque, totam vel blanditiis magni temporibus quasi reprehenderit doloremque suscipit ratione repudiandae deleniti ad optio ut beatae, voluptas minus alias at?</p>
+      <span class="p2">Learn More</span>
+    </div>
+
+  </div>
+</div>
+
+  <!-- PRODUCT -->
+
+<div class="container products" id="ourproducts">
+  <h1 class="product-title">PRODUCTS</h1>
+
+  <div class="row text-center productrow">
+    <div class="col-sm-6 col-md-6 col-lg-3 gx-2 "><div><img class="img-fluid product-image mt-3 p-2" src="assets/images/product1.png" alt="">
+      <h6>H-def Camera</h6>
+      <p>&#x20A6; 70,000</p>
+      <span class="p2 mt-2">Order Now</span>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-6 col-lg-3 gx-2 " ><div><img class="img-fluid product-image mt-3 p-2" src="assets/images/product2.jpg" alt="">
+      <h6>Studio Mic</h6>
+      <p>&#x20A6; 70,000</p>
+      <span class="p2 mt-2">Order Now</span>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-6 col-lg-3 gx-2 " ><div><img class="img-fluid product-image mt-3 p-2" src="assets/images/product3.jpg" alt="">
+      <h6>Mixer</h6>
+      <p>&#x20A6; 70,000</p>
+      <span class="p2 mt-2">Order Now</span>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-6 col-lg-3 gx-2 " ><div><img class="img-fluid product-image mt-3 p-2" src="assets/images/product4.jpg" alt="">
+      <h6>Curve screen monitor</h6>
+      <p>&#x20A6; 70,000</p>
+      <span class="p2 mt-2">Order Now</span>
+    </div>
+  </div>
+  </div>
+  <div class="row text-center productrow">
+    <div class="col-sm-6 col-md-6 col-lg-3 gx-2 " ><div><img class="img-fluid product-image mt-3 p-2" src="assets/images/product5.jpg" alt="">
+      <h6>Amplifier</h6>
+      <p>&#x20A6; 70,000</p>
+      <span class="p2 mt-2">Order Now</span>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-6 col-lg-3 gx-2 " ><div><img class="img-fluid product-image mt-3 p-2" src="assets/images/product6.jpg" alt="">
+      <h6>Light Reflector</h6>
+      <p>&#x20A6; 70,000</p>
+      <span class="p2 mt-2">Order Now</span>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-6 col-lg-3 gx-2 " ><div><img class="img-fluid product-image mt-3 p-2" src="assets/images/product7.jpg" alt="">
+      <h6>Light stand</h6>
+      <p>&#x20A6; 70,000</p>
+      <span class="p2 mt-2">Order Now</span>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-6 col-lg-3 gx-2 " ><div><img class="img-fluid product-image mt-3 p-2" src="assets/images/product8.jpg" alt="">
+      <h6>Clapper</h6>
+      <p>&#x20A6; 70,000</p>
+      <span class="p2 mt-2">Order Now</span>
+    </div>
+  </div>
+  </div>
+</div>
+
+  <!-- CONTACT -->
+
+<div class="container contact" id="contactus">
+  <h1 class="text-center contact-title">Contact</h1>
+<div class="row">
+  <div class="col-md-6 col-sm-12 col-lg-6 mb-4">
+  <h4>Main Office</h4>
+  <p>93,Chief gardens,Banana Island, Ikoyi, Lagos.</p>
+  <br>
+
+  <h4>Branch Office</h4>
+  <p>154,Chris Avenue, Ikeja GRA, Ikeja Lagos</p>
+  <br>
+
+  <h3>Contacts:</h3>
+  <p>
+    <i class="bi bi-envelope-at"></i>:Jblorganizations@gmail.com <br>
+    <i class="bi bi-globe2"></i> Jblent.com <br>
+    <i class="bi bi-telephone"></i> +234 808940938   
+  </p>
+  </div>
+
+
+  <div class="col-md-6 col-sm-12 col-lg-6 mb-4">
+    <div class="row contactform">
+      
+    <form action="">
+    <div class="form-group col-12 contactfill"><input type="text" class="form-control" placeholder="Ambrose Richman"></div>
+    <div class="row">
+    <div class="form-group col-6 contactfill"><input type="tel" class="form-control" placeholder="+234-234567890"></div>
+    <div class="form-group col-6 contactfill"><input type="email" class="form-control" placeholder="richman@email.com"></div>
+    </div>
+    <div class="form-group col-12 contactfill"><textarea class="form-control" name="" id="" col="30" rows="8" placeholder="Type in your message..."></textarea></div>
+    <span class="col-12 p2 text-center">Send Message</span>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+
+<footer class="">
+  <div class="container-fluid bg-body-tertiary">
+    <div class="row">
+
+      <div class="col-md-6 col-sm-12 col-lg-6 left-col-footer">
+        <h1  class="ps-5 mt-5">JBL <span class="footer-colored">ENT.</span></h1>
+        <p class="mt-5 ps-5 words">We provide a means to take your ideas to the world, 
+          give viewers the power, and choice to view the amzing content possible fot man to imagine.
+          Feeding your Ideas and making your Imagination vivid, with the spice of entertainment.
+        </p>
+
+        <span class="d-block footer-colored mt-5 ps-5 words">info@jblent.com.ng | www.jblentertainment.com| 09018767854</span>
+      </div>
+
+      <div class="col-md-6 col-sm-12 col-lg-6 right-col-footer">
+        <div class="row justify-content-around">
+
+          <div class="col-md-12 col-lg-6 col-sm-12 text-center">
+            <h4 class="mt-5">Quick Links</h4>
+            <ul class="list-unstyled text-center footer-colored mt-4 words">
+              <li><a href="" class="text-decoration-none">Home</li></a>
+              <li><a href="" class="text-decoration-none">About Us</li></a>
+              <li><a href="" class="text-decoration-none">Services</li></a>
+              <li><a href="" class="text-decoration-none">Products</li></a>
+              <li><a href="" class="text-decoration-none">Contacts</li></a>
+            </ul>
+          </div>
+
+          <div class="col-md-12 col-lg-6 col-sm-12">
+            <img class="img-fluid mt-5" src="/assets/images/background rotate.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

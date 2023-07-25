@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chakra+Petch:ital,wght@0,500;1,400;1,600&family=Kablammo&family=Kalam&family=Lobster&family=Maven+Pro:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Anton', 'Chakra Petch', sans-serif,'Kablammo','Lobster', cursive;
+    color:black;
+    background-color: rgb(253, 253, 253);
+    }
+
+html{behavior:smooth;}
+
+
+/* STYLING NAVIGATION BUTTONS */
+.navbar-nav a{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-family:'Maven Pro', sans-serif;
+}
+
+.navbar-nav a:hover{
+    color:rgb(21, 20, 11)
+}
+
+/* STYLING HEADER */
+header{
+    height: auto;
+    min-height: 90vh;
+   background-image:linear-gradient(180deg,rgba(141, 141, 76, 0.812),rgba(10, 10, 6, 0.741)), url(/assets/images/background.jpg) ; 
+    flex-direction: column;
+    background-size:cover;
+    object-fit: fill;
+}
+
+/* STYLING NAVIGATION BAR */
+.sticky nav{
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(255, 255, 255, 0.081);
+}
+.sticky{margin-bottom: 10px; position: sticky;top: 0px; width: 100%;}
+
+
+/* STYLING HEADER CONTENT, H1 */
+header h1{
+    font-size: 6rem;
+    color: azure;}
+
+.heading-div{
+    font-family: 'Lobster', cursive;
+    color: azure;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+}
+/* 
+.heading-div button{
+    border: none;
+    background-color: bisque;
+    border-radius: 50px;
+    padding: 5px;
+} */
+
+
+/* STYLING ABOUT US SPACINGS- GIVING APPROPRIATE SPACE AT TOP & BOTTOM */
+#about-us{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+/* STYLING BUTTONS */
+.p2{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    display:inline-block;
+    font-family: 'Kalam', cursive;
+    height: 2rem;
+    width: 6rem;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 20px;
+    box-shadow: 0px 5px rgba(255, 255, 235, 0.5);;
+    border-radius:20px;
+    transition: 0.5s;
+}
+
+
+.services .p2{
+    background-color: #b1b130; 
+    padding: 3px;  
+    font-size:1.2rem;
+    font-weight: bold;
+    width: 7rem;
+    box-shadow: 0px 5px rgba(2, 2, 2, 0.5);
+}
+
+.contact .p2{
+    background-color: #b1b130; 
+    padding: 3px;  
+    font-size:1.2rem;
+    font-weight: bold;
+    width: 10rem;
+    box-shadow: 0px 5px rgba(2, 2, 2, 0.5);
+}
+
+.products .p2{
+     padding: 3px;  
+    font-size:1.2rem;
+    font-weight: bold;
+    width: 8rem;
+}
+
+.services .p2:hover{
+    background-color: rgb(209, 209, 51);
+
+}
+.contact .p2:hover{
+    background-color: rgb(209, 209, 51);
+
+}
+
+.products .p2:hover{
+    background-color: rgb(212, 212, 170);
+}
+
+
+
+.p2:hover{
+    background-color: rgba(138, 139, 106, 0.753);
+    cursor: pointer}
+.p2:active{
+    box-shadow: 0px 5px black;
+    transform: translateY(10px);
+}
+
+
+
+/* END OF BUTTONS STYLING */
+
+
+/* CONTINUATION OF STYLING ABOUT US SECTION  */
+.col-left{
+    margin-top: 15px;
+    min-height: 70vh;
+    background-image: url(/assets/images/aboutus.jpg);
+    background-size: cover;
+    object-fit: cover;
+}
+
+.col-right .section-title{
+    margin-top: 80px;
+    margin-left: 5rem;
+    padding: 1rem 1rem 0rem 1rem;
+    background-color: rgba(207, 190, 34, 0.592) /*rgb(255, 239, 220);*/; 
+    display: inline-block;
+    border-radius: 50px 50px 0px 0px;
+    color: rgb(33, 32, 32);
+    /* background-color: bisque; */
+}
+
+.col-right h1{ }
+.col-right .paragraph{
+    margin-top: 5px;
+    padding: 1rem 1rem 1rem 5rem;
+    text-align: justify;
+    font-family: 'Chakra Petch';
+}
+
+
+/* STYLING SERVICES SECTION*/
+.service-title{
+    margin-top: 2rem;
+    display: inline-block;
+    border-bottom: 5px solid rgb(154, 143, 47);
+}
+
+.services .paragraph{
+    text-align: center;
+    font-family: 'Chakra Petch';
+}
+
+.service-1,.service-2, .service-3{ 
+    margin-top:3rem;
+}
+
+
+.servicesicons{font-size: 2.5rem;}
+
+
+
+/* CONTACT STYLING */
+
+.contact{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    min-height: ; /* THE MIN HEIGHT SET TO 100vh COUNTERS THE CONTACT PAGE NOT SHOWING COMPLETELY ON SOME DEVICES*/
+                        /* SO PUT A MEDIA QUERY IF YOU WILL FOR THE SMALL DEVICES TO SET VH TO 100 */
+}
+.contactform{text-align: center;}
+
+.contact-title{
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+.contact p{
+    text-align: justify;
+    font-family: 'Chakra Petch';
+}
+
+.contact .contactfill{
+    margin-bottom: 1rem;
+    font-family: 'Chakra Petch';
+    
+}
+
+/* BEGINNING OF PRODUCT STYLING */
+
+#ourproducts{margin-top:10rem;}
+
+.product-image{
+    height: 10rem;
+}
+
+.productrow{
+    margin-bottom: 2rem;
+}
+
+
+.product-title{
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+.productrow div div {
+    background-color: rgba(144,133,67,255);
+    padding: 1rem 2rem 2rem 2rem;
+    margin: 3px 3px 2px 3px;
+}
+
+.productrow div{
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px black ;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.productrow div:hover{
+    transform: scale(1.010,1.010);
+    font-family: "Kablammo";
+}
+
+/* STYLING FOOTER */
+.footer-colored{ color:#2c2c06}
+.footer-colored a{color: #2c2c06;}
+
+footer{min-height: 40vh;}
+.left-col-footer p{
+    text-align: justify;
+}
+
+.left-col-footer .words, .right-col-footer .words
+{
+    font-family: 'Chakra Petch';
+}
+
+.right-col-footer a:hover {color: #b1b130;}
+
+/* JAVASCRIPT BUTTONS- FOR EASE OF NAVIGATION AND CHANGE BTWN NIGHT AND DARKMODE */
+.dark{
+    position: absolute;
+    position: fixed;
+    top: 50px;
+    right:10px;
+}    
+
+.dark i{
+    font-size: 1.2rem;
+}
+
+.arrow{
+    position: absolute;
+    position: fixed;
+    bottom: 10vh;
+    right:10px;
+
+}
+
+.arrow a {
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* SETTING OF MEDIA QUERIES FOR DIFFERENT VIEWING COMPATIBILITY */
+@media screen  and (max-width:576px) {
+    header h1{font-size: 3.5rem;} 
+    header{
+        object-fit:fill;
+        background-image:linear-gradient(180deg,rgba(141, 141, 76, 0.812),rgba(10, 10, 6, 0.741)), url(/assets/images/background\ rotate.jpg) ;
+    }}
+@media screen  and (max-width:767px) {
+    .service-1{margin-top: 0px;}   
+}
+
