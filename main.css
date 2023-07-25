@@ -258,6 +258,10 @@ header h1{
 }
 
 /* STYLING FOOTER */
+footer{
+    background-color: #f1f1bb94;
+    padding-bottom: 5rem;
+}
 .footer-colored{ color:#2c2c06}
 .footer-colored a{color: #2c2c06;}
 
